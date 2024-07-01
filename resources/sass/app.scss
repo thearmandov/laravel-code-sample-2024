@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'components/_components';
+@import 'base/_base';
+@import 'layouts/_layouts';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: bottom;
+    color: #2B2B2B;
+}
+
+html {
+    height: 100%;
+}
+
+@media (max-width: 450px) {
+    body {
+        background-image: none;
+    }
+    .card {
+        border: none;
+        margin-top: 4%;
+    }
+}
